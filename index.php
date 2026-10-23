@@ -7,7 +7,7 @@ header('X-Frame-Options: DENY');
 header('Permissions-Policy: camera=(), microphone=(), geolocation=()');
 header('Cache-Control: no-store, max-age=0');
 
-$playlistUrl = getenv('IPTV_PLAYLIST_URL') ?: '';
+$playlistUrl = 'http://netxv8.sbs/get.php?username=crizan2024&password=crizan2024&type=m3u';
 $cacheTtl = 300;
 $cacheFile = sys_get_temp_dir() . '/iptv_playlist_' . hash('sha256', __FILE__) . '.cache';
 umask(0077);
